@@ -43,13 +43,6 @@ while index < len(word):
   print (letter)
   index = index + 1
 
-word ="phraser"
-index=7
-while index > len(word):
-  letter = word[index]
-  print (letter)
-  index = index-1
-
 s="Peter, paul, and Mary"
 print(s[2:4])
 
@@ -65,3 +58,16 @@ for letter in prefixes:
     print(letter+suffixes)
   else:
     print(letter+suffix)
+
+
+word ="phraser"
+index=-1
+while len(word) > index :
+  letter = word[index]
+  print (letter)
+  index = index-1
+
+
+word ="phraser"
+for letter in word[::-1]:
+    print(letter)
