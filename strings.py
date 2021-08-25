@@ -56,3 +56,12 @@ print(s[2:4])
 word="banana"
 if word=="banana":
   print("Yes, we have no bananas!")
+
+prefixes ="JKLMNOPQ"
+suffix ="ack"
+suffixes ="uack"
+for letter in prefixes:
+  if letter=="O" or letter=="Q":
+    print(letter+suffixes)
+  else:
+    print(letter+suffix)
