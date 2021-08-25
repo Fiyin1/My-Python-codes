@@ -45,10 +45,7 @@ while index < len(word):
 
 s="Peter, paul, and Mary"
 print(s[2:4])
-
-word="banana"
-if word=="banana":
-  print("Yes, we have no bananas!")
+print(s[:])
 
 prefixes ="JKLMNOPQ"
 suffix ="ack"
@@ -71,3 +68,15 @@ while len(word) > index :
 word ="phraser"
 for letter in word[::-1]:
     print(letter)
+
+word="banana"
+if word=="banana":
+  print("Yes, we have no bananas!")
+
+word="avery"
+if word < "banana":
+  print ("Your word," + word + ", comes before banana.")
+elif word > "banana":
+  print("Your word,"+ word +", comes after banana.")
+else:
+  print("Yes, we have no bananas!")
