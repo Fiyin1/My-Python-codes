@@ -36,6 +36,7 @@ length=len(word)
 last=word[length-1]
 print(last)
 
+
 word="phraser"
 index=0
 while index < len(word):
@@ -47,6 +48,7 @@ s="Peter, paul, and Mary"
 print(s[2:4])
 print(s[:])
 
+#exercise on for loop
 prefixes ="JKLMNOPQ"
 suffix ="ack"
 suffixes ="uack"
@@ -56,7 +58,7 @@ for letter in prefixes:
   else:
     print(letter+suffix)
 
-
+#exercise on traversal
 word ="phraser"
 index=-1
 while len(word) > index :
@@ -85,7 +87,7 @@ greeting="Hello World!"
 newGreeting ='J' + greeting[1:]
 print (newGreeting)
 
-def find(str, ch, index=[] ):
+def find(str, ch, n ):
   index = 0
   while index < len(str):
     if str[index]== ch:
@@ -93,7 +95,7 @@ def find(str, ch, index=[] ):
     index = index + 1
   return -1
 
-find("completec", "c",index=[2])
+find("completec", "c",2)
 
 fruit ="banana"
 count = 0
@@ -101,7 +103,8 @@ for char in fruit:
   if char =='a':
     count = count + 1
 print (count)
-
+ 
+# exercise on count
 def countLetters(str,ch):
   count = 0
   for char in str:
@@ -110,3 +113,26 @@ def countLetters(str,ch):
   print(count) 
 
 countLetters("complete", "e")
+
+fruit = "banana"
+index=str.find(fruit,"na")
+print(index)
+
+import string
+
+print(string.ascii_lowercase)
+print(string.ascii_uppercase)
+print(string.digits)
+ 
+def isLower(ch):
+  return str.find(str.lower,ch) !=-1
+
+isLower("O")
+
+def isLower(ch):
+  return ch in string.ascii_lowercase
+
+isLower("e")
+
+print(string.whitespace)
+
