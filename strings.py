@@ -80,3 +80,7 @@ elif word > "banana":
   print("Your word,"+ word +", comes after banana.")
 else:
   print("Yes, we have no bananas!")
+
+greeting="Hello World!"
+newGreeting ='J' + greeting[1:]
+print (newGreeting)
