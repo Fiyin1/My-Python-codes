@@ -84,3 +84,29 @@ else:
 greeting="Hello World!"
 newGreeting ='J' + greeting[1:]
 print (newGreeting)
+
+def find(str, ch, index=[] ):
+  index = 0
+  while index < len(str):
+    if str[index]== ch:
+      return index
+    index = index + 1
+  return -1
+
+find("completec", "c",index=[2])
+
+fruit ="banana"
+count = 0
+for char in fruit:
+  if char =='a':
+    count = count + 1
+print (count)
+
+def countLetters(str,ch):
+  count = 0
+  for char in str:
+    if char ==ch:
+     count = count + 1
+  print(count) 
+
+countLetters("complete", "e")
